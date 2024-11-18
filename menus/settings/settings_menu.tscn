@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://dbcx01gfc2egl"]
+
+[ext_resource type="Script" path="res://menus/settings/settings_menu.gd" id="1_3njd3"]
+[ext_resource type="Theme" uid="uid://buobf6hp20a88" path="res://assets/themes/main_theme.tres" id="1_ymyer"]
+[ext_resource type="PackedScene" uid="uid://bui3ll8rrjtr5" path="res://menus/settings/general/general_settings.tscn" id="3_efja4"]
+[ext_resource type="PackedScene" uid="uid://8dpytxm8wnja" path="res://menus/settings/audio/audio_settings.tscn" id="4_0qu4n"]
+[ext_resource type="PackedScene" uid="uid://cegth5lnywr8e" path="res://menus/settings/keybinds/keybind_settings.tscn" id="5_ffyqg"]
+[ext_resource type="PackedScene" uid="uid://bc3rxdjct6p2n" path="res://menus/settings/gameplay/gameplay_settings.tscn" id="6_ar66t"]
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ymyer")
+script = ExtResource("1_3njd3")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 80
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 80
+theme_override_constants/margin_bottom = 40
+
+[node name="TabContainer" type="TabContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+current_tab = 0
+
+[node name="General" parent="MarginContainer/TabContainer" instance=ExtResource("3_efja4")]
+layout_mode = 2
+
+[node name="Audio" parent="MarginContainer/TabContainer" instance=ExtResource("4_0qu4n")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Keybinds" parent="MarginContainer/TabContainer" instance=ExtResource("5_ffyqg")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="Gameplay" parent="MarginContainer/TabContainer" instance=ExtResource("6_ar66t")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3

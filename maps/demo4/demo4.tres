@@ -1,0 +1,339 @@
+[gd_resource type="Resource" script_class="Map" load_steps=59 format=3 uid="uid://bsnw4adxu12qq"]
+
+[ext_resource type="Script" path="res://maps/hit_object.gd" id="1_1xg7i"]
+[ext_resource type="AudioStream" uid="uid://b3f8coheccbib" path="res://maps/demo4/demo4.mp3" id="1_32jdp"]
+[ext_resource type="Script" path="res://maps/map.gd" id="2_5cjoo"]
+[ext_resource type="Script" path="res://maps/timing_point.gd" id="3_iwwf2"]
+
+[sub_resource type="Resource" id="Resource_if385"]
+script = ExtResource("1_1xg7i")
+start_time = 3000
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_f1a24"]
+script = ExtResource("1_1xg7i")
+start_time = 3132
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_3smlf"]
+script = ExtResource("1_1xg7i")
+start_time = 3265
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_7ok58"]
+script = ExtResource("1_1xg7i")
+start_time = 3398
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_vrkfa"]
+script = ExtResource("1_1xg7i")
+start_time = 3530
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_k47tl"]
+script = ExtResource("1_1xg7i")
+start_time = 3929
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_0xkir"]
+script = ExtResource("1_1xg7i")
+start_time = 4327
+end_time = 4991
+lane = 1
+
+[sub_resource type="Resource" id="Resource_eow1m"]
+script = ExtResource("1_1xg7i")
+start_time = 5123
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_y3tjf"]
+script = ExtResource("1_1xg7i")
+start_time = 5256
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_jhwk8"]
+script = ExtResource("1_1xg7i")
+start_time = 5389
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_y1vnp"]
+script = ExtResource("1_1xg7i")
+start_time = 5522
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_6jgn1"]
+script = ExtResource("1_1xg7i")
+start_time = 5654
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_xbug6"]
+script = ExtResource("1_1xg7i")
+start_time = 6053
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_l7fc2"]
+script = ExtResource("1_1xg7i")
+start_time = 6451
+end_time = 7115
+lane = 1
+
+[sub_resource type="Resource" id="Resource_w5e0w"]
+script = ExtResource("1_1xg7i")
+start_time = 7247
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_77nqg"]
+script = ExtResource("1_1xg7i")
+start_time = 7380
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_dj333"]
+script = ExtResource("1_1xg7i")
+start_time = 7513
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_trpow"]
+script = ExtResource("1_1xg7i")
+start_time = 7646
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_5mg1p"]
+script = ExtResource("1_1xg7i")
+start_time = 7778
+end_time = 8176
+lane = 1
+
+[sub_resource type="Resource" id="Resource_qghwx"]
+script = ExtResource("1_1xg7i")
+start_time = 8309
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_8neh1"]
+script = ExtResource("1_1xg7i")
+start_time = 8575
+end_time = 8973
+lane = 1
+
+[sub_resource type="Resource" id="Resource_33g5b"]
+script = ExtResource("1_1xg7i")
+start_time = 9106
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_6acmm"]
+script = ExtResource("1_1xg7i")
+start_time = 9637
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_iiirm"]
+script = ExtResource("1_1xg7i")
+start_time = 9902
+end_time = 10300
+lane = 1
+
+[sub_resource type="Resource" id="Resource_0vqup"]
+script = ExtResource("1_1xg7i")
+start_time = 10433
+end_time = 10964
+lane = 1
+
+[sub_resource type="Resource" id="Resource_2pcrf"]
+script = ExtResource("1_1xg7i")
+start_time = 11495
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_fyt7f"]
+script = ExtResource("1_1xg7i")
+start_time = 11628
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_r14m5"]
+script = ExtResource("1_1xg7i")
+start_time = 11761
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_kpwdo"]
+script = ExtResource("1_1xg7i")
+start_time = 11893
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_p33i4"]
+script = ExtResource("1_1xg7i")
+start_time = 12026
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_gy18a"]
+script = ExtResource("1_1xg7i")
+start_time = 12424
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_d1mva"]
+script = ExtResource("1_1xg7i")
+start_time = 12823
+end_time = 13486
+lane = 1
+
+[sub_resource type="Resource" id="Resource_rggt6"]
+script = ExtResource("1_1xg7i")
+start_time = 13619
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_7i2mu"]
+script = ExtResource("1_1xg7i")
+start_time = 13752
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_7tod7"]
+script = ExtResource("1_1xg7i")
+start_time = 13884
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_263gi"]
+script = ExtResource("1_1xg7i")
+start_time = 14017
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_t34c4"]
+script = ExtResource("1_1xg7i")
+start_time = 14150
+end_time = 14548
+lane = 1
+
+[sub_resource type="Resource" id="Resource_87fb4"]
+script = ExtResource("1_1xg7i")
+start_time = 14681
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_3n7lq"]
+script = ExtResource("1_1xg7i")
+start_time = 14946
+end_time = 15212
+lane = 1
+
+[sub_resource type="Resource" id="Resource_s4s3j"]
+script = ExtResource("1_1xg7i")
+start_time = 15345
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_2bd1c"]
+script = ExtResource("1_1xg7i")
+start_time = 15477
+end_time = 15610
+lane = 1
+
+[sub_resource type="Resource" id="Resource_aeg8m"]
+script = ExtResource("1_1xg7i")
+start_time = 15743
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_388hl"]
+script = ExtResource("1_1xg7i")
+start_time = 15876
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_uww62"]
+script = ExtResource("1_1xg7i")
+start_time = 16008
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_uqamk"]
+script = ExtResource("1_1xg7i")
+start_time = 16141
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_t0jnn"]
+script = ExtResource("1_1xg7i")
+start_time = 16274
+end_time = 16672
+lane = 1
+
+[sub_resource type="Resource" id="Resource_vsajb"]
+script = ExtResource("1_1xg7i")
+start_time = 16805
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_ysv2v"]
+script = ExtResource("1_1xg7i")
+start_time = 17070
+end_time = 17336
+lane = 1
+
+[sub_resource type="Resource" id="Resource_h4hn3"]
+script = ExtResource("1_1xg7i")
+start_time = 17469
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_swadl"]
+script = ExtResource("1_1xg7i")
+start_time = 17601
+end_time = 17999
+lane = 1
+
+[sub_resource type="Resource" id="Resource_tml1f"]
+script = ExtResource("1_1xg7i")
+start_time = 18132
+end_time = 18265
+lane = 1
+
+[sub_resource type="Resource" id="Resource_lxs8m"]
+script = ExtResource("1_1xg7i")
+start_time = 18398
+end_time = 18796
+lane = 1
+
+[sub_resource type="Resource" id="Resource_ugk0c"]
+script = ExtResource("1_1xg7i")
+start_time = 18929
+end_time = 19460
+lane = 1
+
+[sub_resource type="Resource" id="Resource_u44w8"]
+script = ExtResource("3_iwwf2")
+time = 3000.0
+bpm = 113.0
+
+[resource]
+script = ExtResource("2_5cjoo")
+audio = ExtResource("1_32jdp")
+artist = "polyxord"
+song_name = "demo4"
+mapper = "polyxord"
+game_mode = "1k"
+timing_points = Array[ExtResource("3_iwwf2")]([SubResource("Resource_u44w8")])
+hit_objects = Array[ExtResource("1_1xg7i")]([SubResource("Resource_if385"), SubResource("Resource_f1a24"), SubResource("Resource_3smlf"), SubResource("Resource_7ok58"), SubResource("Resource_vrkfa"), SubResource("Resource_k47tl"), SubResource("Resource_0xkir"), SubResource("Resource_eow1m"), SubResource("Resource_y3tjf"), SubResource("Resource_jhwk8"), SubResource("Resource_y1vnp"), SubResource("Resource_6jgn1"), SubResource("Resource_xbug6"), SubResource("Resource_l7fc2"), SubResource("Resource_w5e0w"), SubResource("Resource_77nqg"), SubResource("Resource_dj333"), SubResource("Resource_trpow"), SubResource("Resource_5mg1p"), SubResource("Resource_qghwx"), SubResource("Resource_8neh1"), SubResource("Resource_33g5b"), SubResource("Resource_6acmm"), SubResource("Resource_iiirm"), SubResource("Resource_0vqup"), SubResource("Resource_2pcrf"), SubResource("Resource_fyt7f"), SubResource("Resource_r14m5"), SubResource("Resource_kpwdo"), SubResource("Resource_p33i4"), SubResource("Resource_gy18a"), SubResource("Resource_d1mva"), SubResource("Resource_rggt6"), SubResource("Resource_7i2mu"), SubResource("Resource_7tod7"), SubResource("Resource_263gi"), SubResource("Resource_t34c4"), SubResource("Resource_87fb4"), SubResource("Resource_3n7lq"), SubResource("Resource_s4s3j"), SubResource("Resource_2bd1c"), SubResource("Resource_aeg8m"), SubResource("Resource_388hl"), SubResource("Resource_uww62"), SubResource("Resource_uqamk"), SubResource("Resource_t0jnn"), SubResource("Resource_vsajb"), SubResource("Resource_ysv2v"), SubResource("Resource_h4hn3"), SubResource("Resource_swadl"), SubResource("Resource_tml1f"), SubResource("Resource_lxs8m"), SubResource("Resource_ugk0c")])

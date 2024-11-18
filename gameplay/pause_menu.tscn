@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck4klsg86deay"]
+
+[ext_resource type="Theme" uid="uid://bq2d7hosyc2nx" path="res://assets/themes/pause_menu_theme.tres" id="1_6xmvn"]
+[ext_resource type="Script" path="res://gameplay/pause_menu.gd" id="1_8ix0f"]
+[ext_resource type="Resource" uid="uid://cvxolvc4e8qx5" path="res://maps/demo1/demo1.tres" id="3_v6n05"]
+
+[node name="PauseMenu" type="ColorRect"]
+process_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_6xmvn")
+color = Color(0, 0, 0, 0.682353)
+script = ExtResource("1_8ix0f")
+map_to_retry = ExtResource("3_v6n05")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 80
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 80
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 100
+text = "Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_top = NodePath("../QuitButton")
+focus_previous = NodePath("../QuitButton")
+text = "Resume"
+
+[node name="RetryButton" type="Button" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Retry"
+
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../ResumeButton")
+focus_next = NodePath("../ResumeButton")
+text = "Quit"

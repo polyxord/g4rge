@@ -1,0 +1,255 @@
+[gd_resource type="Resource" script_class="Map" load_steps=45 format=3 uid="uid://cvxolvc4e8qx5"]
+
+[ext_resource type="AudioStream" uid="uid://b2c0cjqjh8ma2" path="res://maps/demo1/demo1.mp3" id="1_a1dvw"]
+[ext_resource type="Script" path="res://maps/hit_object.gd" id="2_ol8ei"]
+[ext_resource type="Script" path="res://maps/map.gd" id="3_6v47h"]
+[ext_resource type="Script" path="res://maps/timing_point.gd" id="4_dnfxl"]
+
+[sub_resource type="Resource" id="Resource_1fwia"]
+script = ExtResource("2_ol8ei")
+start_time = 3026
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_vif4g"]
+script = ExtResource("2_ol8ei")
+start_time = 4210
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_tl4kf"]
+script = ExtResource("2_ol8ei")
+start_time = 4604
+end_time = 0
+lane = 7
+
+[sub_resource type="Resource" id="Resource_3gwqo"]
+script = ExtResource("2_ol8ei")
+start_time = 5789
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_vonvs"]
+script = ExtResource("2_ol8ei")
+start_time = 6183
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_je3bp"]
+script = ExtResource("2_ol8ei")
+start_time = 7368
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_1kslu"]
+script = ExtResource("2_ol8ei")
+start_time = 7565
+end_time = 0
+lane = 6
+
+[sub_resource type="Resource" id="Resource_5kmgt"]
+script = ExtResource("2_ol8ei")
+start_time = 7762
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_j4q2f"]
+script = ExtResource("2_ol8ei")
+start_time = 8947
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_o0ke2"]
+script = ExtResource("2_ol8ei")
+start_time = 9341
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_t84aa"]
+script = ExtResource("2_ol8ei")
+start_time = 9736
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_k2qj4"]
+script = ExtResource("2_ol8ei")
+start_time = 10131
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_6acv2"]
+script = ExtResource("2_ol8ei")
+start_time = 10526
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_qftox"]
+script = ExtResource("2_ol8ei")
+start_time = 10920
+end_time = 0
+lane = 7
+
+[sub_resource type="Resource" id="Resource_eay3y"]
+script = ExtResource("2_ol8ei")
+start_time = 11315
+end_time = 0
+lane = 6
+
+[sub_resource type="Resource" id="Resource_e4fm4"]
+script = ExtResource("2_ol8ei")
+start_time = 11710
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_wx1ck"]
+script = ExtResource("2_ol8ei")
+start_time = 12104
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_3gyle"]
+script = ExtResource("2_ol8ei")
+start_time = 12499
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_vr7sc"]
+script = ExtResource("2_ol8ei")
+start_time = 13683
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_fcx0g"]
+script = ExtResource("2_ol8ei")
+start_time = 13881
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_y6d77"]
+script = ExtResource("2_ol8ei")
+start_time = 15262
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_0pjln"]
+script = ExtResource("2_ol8ei")
+start_time = 15460
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_si82f"]
+script = ExtResource("2_ol8ei")
+start_time = 15657
+end_time = 0
+lane = 6
+
+[sub_resource type="Resource" id="Resource_ewy4j"]
+script = ExtResource("2_ol8ei")
+start_time = 16052
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_tvmbm"]
+script = ExtResource("2_ol8ei")
+start_time = 16447
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_bt8bm"]
+script = ExtResource("2_ol8ei")
+start_time = 16841
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_bkdxs"]
+script = ExtResource("2_ol8ei")
+start_time = 17236
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_vqow8"]
+script = ExtResource("2_ol8ei")
+start_time = 18223
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_xejov"]
+script = ExtResource("2_ol8ei")
+start_time = 18420
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_5r078"]
+script = ExtResource("2_ol8ei")
+start_time = 18815
+end_time = 0
+lane = 6
+
+[sub_resource type="Resource" id="Resource_iwmwt"]
+script = ExtResource("2_ol8ei")
+start_time = 19210
+end_time = 0
+lane = 7
+
+[sub_resource type="Resource" id="Resource_dk7ma"]
+script = ExtResource("2_ol8ei")
+start_time = 19604
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_uomr8"]
+script = ExtResource("2_ol8ei")
+start_time = 19999
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_pbm1g"]
+script = ExtResource("2_ol8ei")
+start_time = 20394
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_34fu6"]
+script = ExtResource("2_ol8ei")
+start_time = 21973
+end_time = 0
+lane = 6
+
+[sub_resource type="Resource" id="Resource_kfnrj"]
+script = ExtResource("2_ol8ei")
+start_time = 23157
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_go52g"]
+script = ExtResource("2_ol8ei")
+start_time = 23552
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_30h2c"]
+script = ExtResource("2_ol8ei")
+start_time = 24341
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_g0ope"]
+script = ExtResource("2_ol8ei")
+start_time = 25131
+end_time = 0
+lane = 7
+
+[sub_resource type="Resource" id="Resource_o8jna"]
+script = ExtResource("4_dnfxl")
+time = 3026.0
+bpm = 152.0
+
+[resource]
+script = ExtResource("3_6v47h")
+audio = ExtResource("1_a1dvw")
+artist = "polyxord"
+song_name = "demo1"
+mapper = "polyxord"
+game_mode = "7k"
+timing_points = Array[ExtResource("4_dnfxl")]([SubResource("Resource_o8jna")])
+hit_objects = Array[ExtResource("2_ol8ei")]([SubResource("Resource_1fwia"), SubResource("Resource_vif4g"), SubResource("Resource_tl4kf"), SubResource("Resource_3gwqo"), SubResource("Resource_vonvs"), SubResource("Resource_je3bp"), SubResource("Resource_1kslu"), SubResource("Resource_5kmgt"), SubResource("Resource_j4q2f"), SubResource("Resource_o0ke2"), SubResource("Resource_t84aa"), SubResource("Resource_k2qj4"), SubResource("Resource_6acv2"), SubResource("Resource_qftox"), SubResource("Resource_eay3y"), SubResource("Resource_e4fm4"), SubResource("Resource_wx1ck"), SubResource("Resource_3gyle"), SubResource("Resource_vr7sc"), SubResource("Resource_fcx0g"), SubResource("Resource_y6d77"), SubResource("Resource_0pjln"), SubResource("Resource_si82f"), SubResource("Resource_ewy4j"), SubResource("Resource_tvmbm"), SubResource("Resource_bt8bm"), SubResource("Resource_bkdxs"), SubResource("Resource_vqow8"), SubResource("Resource_xejov"), SubResource("Resource_5r078"), SubResource("Resource_iwmwt"), SubResource("Resource_dk7ma"), SubResource("Resource_uomr8"), SubResource("Resource_pbm1g"), SubResource("Resource_34fu6"), SubResource("Resource_kfnrj"), SubResource("Resource_go52g"), SubResource("Resource_30h2c"), SubResource("Resource_g0ope")])

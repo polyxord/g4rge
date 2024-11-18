@@ -1,0 +1,218 @@
+[gd_scene load_steps=3 format=3 uid="uid://bui3ll8rrjtr5"]
+
+[ext_resource type="Theme" uid="uid://dg85ex5qa0bpc" path="res://assets/themes/secondary_theme.tres" id="1_orwqf"]
+[ext_resource type="Script" path="res://menus/settings/general/general_settings.gd" id="2_jo2v3"]
+
+[node name="GeneralSettings" type="ScrollContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_orwqf")
+follow_focus = true
+script = ExtResource("2_jo2v3")
+_screen_resolutions = Array[String](["640 x 360", "640 x 480", "800 x 600", "840 x 525", "1024 x 576", "1024 x 768", "1152 x 648", "1152 x 720", "1280 x 720", "1280 x 800", "1366 x 768", "1440 x 900", "1600 x 900", "1600 x 1200", "1650 x 1050", "1920 x 1080", "1920 x 1200", "2048 x 1280", "2560 x 1440", "2560 x 1600"])
+metadata/_tab_index = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Resolution" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Resolution"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+text = "Resolution"
+
+[node name="ResolutionOptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/Resolution"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="ContentStretchMode" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ContentStretchMode"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+text = "Content Stretch Mode"
+
+[node name="StretchOptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/ContentStretchMode"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+selected = 0
+item_count = 3
+popup/item_0/text = "Disabled"
+popup/item_1/text = "Canvas Items"
+popup/item_1/id = 1
+popup/item_2/text = "Viewport"
+popup/item_2/id = 2
+
+[node name="ContentScaleFactor" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ContentScaleFactor"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ContentScaleFactor/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Content Scale Factor"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/ContentScaleFactor/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_right = 10
+
+[node name="ScaleFactorValueLabel" type="Label" parent="MarginContainer/VBoxContainer/ContentScaleFactor/HBoxContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "1.0"
+horizontal_alignment = 2
+
+[node name="ScaleFactorHSlider" type="HSlider" parent="MarginContainer/VBoxContainer/ContentScaleFactor"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+min_value = 0.5
+max_value = 1.5
+step = 0.05
+value = 1.0
+
+[node name="Fullscreen" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Fullscreen"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+text = "Fullscreen"
+
+[node name="FullscreenOptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/Fullscreen"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+selected = 0
+item_count = 2
+popup/item_0/text = "Off"
+popup/item_1/text = "On"
+popup/item_1/id = 1
+
+[node name="Borderless" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Borderless"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+text = "Borderless"
+
+[node name="BorderlessOptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/Borderless"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+selected = 0
+item_count = 2
+popup/item_0/text = "Off"
+popup/item_1/text = "On"
+popup/item_1/id = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VSync" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VSync"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+text = "V-Sync Mode"
+
+[node name="VSyncOptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/VSync"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+selected = 0
+item_count = 2
+popup/item_0/text = "Off"
+popup/item_1/text = "On"
+popup/item_1/id = 1
+
+[node name="MaxFPS" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MaxFPS"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MaxFPS/HBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 1.5
+text = "Max FPS"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/MaxFPS/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "(0 fps = \"unlimited\" fps)"
+
+[node name="MaxFPSSpinBox" type="SpinBox" parent="MarginContainer/VBoxContainer/MaxFPS"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 480.0
+value = 120.0
+allow_greater = true
+alignment = 1
+
+[node name="UPS" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/UPS"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/UPS/HBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 1.5
+text = "Max UPS"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/UPS/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "(updates per second / input polling Hz)"
+
+[node name="UPSSpinBox" type="SpinBox" parent="MarginContainer/VBoxContainer/UPS"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 30.0
+max_value = 2000.0
+value = 240.0
+alignment = 1

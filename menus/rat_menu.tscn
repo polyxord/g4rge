@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c27xsibu4d4dt"]
+
+[ext_resource type="Script" path="res://menus/rat_menu.gd" id="1_b3nrl"]
+[ext_resource type="Texture2D" uid="uid://of1wfe33fud3" path="res://assets/rat/rat.jpg" id="2_ceok2"]
+[ext_resource type="AudioStream" uid="uid://dbapmnfc5mm7e" path="res://assets/sfx/almost_vine_boom.mp3" id="3_mijgr"]
+
+[node name="RatMenu" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ceok2")
+expand_mode = 1
+script = ExtResource("1_b3nrl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_mijgr")
+pitch_scale = 0.5
+autoplay = true
+bus = &"Music"

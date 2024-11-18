@@ -1,0 +1,77 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="g4rge"
+config/description="Godot 4 rhythm game example"
+run/main_scene="res://menus/main_menu.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+
+[autoload]
+
+SceneHandler="*res://singletons/scene_handler.tscn"
+ConfigHandler="*res://singletons/config_handler.gd"
+
+[display]
+
+window/size/always_on_top=true
+window/bg_color=Color(0, 0, 0, 1)
+
+[input]
+
+lane_1={
+"deadzone": 0.5,
+"events": []
+}
+lane_2={
+"deadzone": 0.5,
+"events": []
+}
+lane_3={
+"deadzone": 0.5,
+"events": []
+}
+lane_4={
+"deadzone": 0.5,
+"events": []
+}
+lane_5={
+"deadzone": 0.5,
+"events": []
+}
+lane_6={
+"deadzone": 0.5,
+"events": []
+}
+lane_7={
+"deadzone": 0.5,
+"events": []
+}
+lane_8={
+"deadzone": 0.5,
+"events": []
+}
+lane_9={
+"deadzone": 0.5,
+"events": []
+}
+lane_10={
+"deadzone": 0.5,
+"events": []
+}
+
+[physics]
+
+common/physics_jitter_fix=0.0
+
+[rendering]
+
+renderer/rendering_method="mobile"

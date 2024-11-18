@@ -1,0 +1,124 @@
+[gd_scene load_steps=3 format=3 uid="uid://8dpytxm8wnja"]
+
+[ext_resource type="Theme" uid="uid://dg85ex5qa0bpc" path="res://assets/themes/secondary_theme.tres" id="1_dkjbo"]
+[ext_resource type="Script" path="res://menus/settings/audio/audio_settings.gd" id="2_cte7h"]
+
+[node name="AudioSettings" type="ScrollContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_dkjbo")
+follow_focus = true
+script = ExtResource("2_cte7h")
+metadata/_tab_index = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MasterVolume" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MasterVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MasterVolume/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Master Volume"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MasterVolume/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_right = 10
+
+[node name="MasterVolumeLabel" type="Label" parent="MarginContainer/VBoxContainer/MasterVolume/HBoxContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100%"
+horizontal_alignment = 2
+
+[node name="MasterVolumeHSlider" type="HSlider" parent="MarginContainer/VBoxContainer/MasterVolume"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.0
+step = 0.05
+value = 0.5
+
+[node name="MusicVolume" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MusicVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MusicVolume/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Music Volume"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MusicVolume/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_right = 10
+
+[node name="MusicVolumeLabel" type="Label" parent="MarginContainer/VBoxContainer/MusicVolume/HBoxContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100%"
+horizontal_alignment = 2
+
+[node name="MusicVolumeHSlider" type="HSlider" parent="MarginContainer/VBoxContainer/MusicVolume"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.0
+step = 0.05
+value = 0.5
+
+[node name="SFXVolume" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/SFXVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SFXVolume/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "SFX Volume"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/SFXVolume/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_right = 10
+
+[node name="SFXVolumeLabel" type="Label" parent="MarginContainer/VBoxContainer/SFXVolume/HBoxContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100%"
+horizontal_alignment = 2
+
+[node name="SFXVolumeHSlider" type="HSlider" parent="MarginContainer/VBoxContainer/SFXVolume"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.0
+step = 0.05
+value = 0.5

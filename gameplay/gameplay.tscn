@@ -1,0 +1,137 @@
+[gd_scene load_steps=4 format=3 uid="uid://e826sn5fqdi1"]
+
+[ext_resource type="Script" path="res://gameplay/gameplay.gd" id="1_e730p"]
+[ext_resource type="Resource" uid="uid://cvxolvc4e8qx5" path="res://maps/demo1/demo1.tres" id="2_cg20s"]
+[ext_resource type="PackedScene" uid="uid://ck4klsg86deay" path="res://gameplay/pause_menu.tscn" id="3_0gmnj"]
+
+[node name="Gameplay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e730p")
+map = ExtResource("2_cg20s")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+bus = &"Music"
+
+[node name="LevelEndTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Playfield" type="Control" parent="CanvasLayer"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HboxContainer" type="HBoxContainer" parent="CanvasLayer/Playfield"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Border1" type="ColorRect" parent="CanvasLayer/Playfield/HboxContainer"]
+custom_minimum_size = Vector2(2, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Playfield/HboxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Spacer" type="Control" parent="CanvasLayer/Playfield/HboxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+
+[node name="Receptor" type="ColorRect" parent="CanvasLayer/Playfield/HboxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+size_flags_stretch_ratio = 5.0
+
+[node name="LanesHBoxContainer" type="HBoxContainer" parent="CanvasLayer/Playfield/HboxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(727, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="Border2" type="ColorRect" parent="CanvasLayer/Playfield/HboxContainer"]
+custom_minimum_size = Vector2(2, 0)
+layout_mode = 2
+
+[node name="ComboLabel" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.3
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "727"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="JudgementLabel" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.4
+anchor_right = 0.5
+anchor_bottom = 0.4
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Judgement Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HitErrorBar" type="ColorRect" parent="CanvasLayer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(4, 14)
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.6
+anchor_right = 0.5
+anchor_bottom = 0.6
+offset_left = -2.0
+offset_top = -7.0
+offset_right = 2.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("3_0gmnj")]
+unique_name_in_owner = true
+visible = false

@@ -1,0 +1,237 @@
+[gd_resource type="Resource" script_class="Map" load_steps=42 format=3 uid="uid://8r4o3h7en2am"]
+
+[ext_resource type="Script" path="res://maps/hit_object.gd" id="1_corss"]
+[ext_resource type="AudioStream" uid="uid://p6xv8pbqy613" path="res://maps/demo3/demo3.mp3" id="1_syva0"]
+[ext_resource type="Script" path="res://maps/map.gd" id="2_4dc0s"]
+[ext_resource type="Script" path="res://maps/timing_point.gd" id="3_or160"]
+
+[sub_resource type="Resource" id="Resource_bhycc"]
+script = ExtResource("1_corss")
+start_time = 3535
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_qtbgy"]
+script = ExtResource("1_corss")
+start_time = 4607
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_lab8k"]
+script = ExtResource("1_corss")
+start_time = 5142
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_qgkou"]
+script = ExtResource("1_corss")
+start_time = 6750
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_c2ice"]
+script = ExtResource("1_corss")
+start_time = 7017
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_dlw6a"]
+script = ExtResource("1_corss")
+start_time = 7285
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_8gwqj"]
+script = ExtResource("1_corss")
+start_time = 8892
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_gubf0"]
+script = ExtResource("1_corss")
+start_time = 9160
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_du88j"]
+script = ExtResource("1_corss")
+start_time = 9428
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_5vc15"]
+script = ExtResource("1_corss")
+start_time = 11035
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_vbsnt"]
+script = ExtResource("1_corss")
+start_time = 12107
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_lo00i"]
+script = ExtResource("1_corss")
+start_time = 13178
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_vhm60"]
+script = ExtResource("1_corss")
+start_time = 13714
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_skk86"]
+script = ExtResource("1_corss")
+start_time = 15321
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_4i15l"]
+script = ExtResource("1_corss")
+start_time = 15857
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_nnk8h"]
+script = ExtResource("1_corss")
+start_time = 17464
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_68int"]
+script = ExtResource("1_corss")
+start_time = 18000
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_vu2r2"]
+script = ExtResource("1_corss")
+start_time = 19071
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_1x1nm"]
+script = ExtResource("1_corss")
+start_time = 20678
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_5s144"]
+script = ExtResource("1_corss")
+start_time = 21750
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_2kv6o"]
+script = ExtResource("1_corss")
+start_time = 22285
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_tbbqu"]
+script = ExtResource("1_corss")
+start_time = 23892
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_ym07v"]
+script = ExtResource("1_corss")
+start_time = 24160
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_nbg4y"]
+script = ExtResource("1_corss")
+start_time = 24428
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_8r0gc"]
+script = ExtResource("1_corss")
+start_time = 26035
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_m7mgq"]
+script = ExtResource("1_corss")
+start_time = 26303
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_e7pha"]
+script = ExtResource("1_corss")
+start_time = 26571
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_mvp7y"]
+script = ExtResource("1_corss")
+start_time = 28178
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_akg74"]
+script = ExtResource("1_corss")
+start_time = 29250
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_if4wk"]
+script = ExtResource("1_corss")
+start_time = 30321
+end_time = 0
+lane = 2
+
+[sub_resource type="Resource" id="Resource_6yfcl"]
+script = ExtResource("1_corss")
+start_time = 30857
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_plkch"]
+script = ExtResource("1_corss")
+start_time = 32464
+end_time = 0
+lane = 4
+
+[sub_resource type="Resource" id="Resource_msjd6"]
+script = ExtResource("1_corss")
+start_time = 33000
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_x41s6"]
+script = ExtResource("1_corss")
+start_time = 34607
+end_time = 0
+lane = 1
+
+[sub_resource type="Resource" id="Resource_cge1p"]
+script = ExtResource("1_corss")
+start_time = 35142
+end_time = 0
+lane = 3
+
+[sub_resource type="Resource" id="Resource_x75ej"]
+script = ExtResource("1_corss")
+start_time = 36214
+end_time = 0
+lane = 5
+
+[sub_resource type="Resource" id="Resource_syk6b"]
+script = ExtResource("3_or160")
+time = 3000.0
+bpm = 112.0
+
+[resource]
+script = ExtResource("2_4dc0s")
+audio = ExtResource("1_syva0")
+artist = "polyxord"
+song_name = "demo3"
+mapper = "polyxord"
+game_mode = "5k"
+timing_points = Array[ExtResource("3_or160")]([SubResource("Resource_syk6b")])
+hit_objects = Array[ExtResource("1_corss")]([SubResource("Resource_bhycc"), SubResource("Resource_qtbgy"), SubResource("Resource_lab8k"), SubResource("Resource_qgkou"), SubResource("Resource_c2ice"), SubResource("Resource_dlw6a"), SubResource("Resource_8gwqj"), SubResource("Resource_gubf0"), SubResource("Resource_du88j"), SubResource("Resource_5vc15"), SubResource("Resource_vbsnt"), SubResource("Resource_lo00i"), SubResource("Resource_vhm60"), SubResource("Resource_skk86"), SubResource("Resource_4i15l"), SubResource("Resource_nnk8h"), SubResource("Resource_68int"), SubResource("Resource_vu2r2"), SubResource("Resource_1x1nm"), SubResource("Resource_5s144"), SubResource("Resource_2kv6o"), SubResource("Resource_tbbqu"), SubResource("Resource_ym07v"), SubResource("Resource_nbg4y"), SubResource("Resource_8r0gc"), SubResource("Resource_m7mgq"), SubResource("Resource_e7pha"), SubResource("Resource_mvp7y"), SubResource("Resource_akg74"), SubResource("Resource_if4wk"), SubResource("Resource_6yfcl"), SubResource("Resource_plkch"), SubResource("Resource_msjd6"), SubResource("Resource_x41s6"), SubResource("Resource_cge1p"), SubResource("Resource_x75ej")])
