@@ -15,7 +15,7 @@ of drastically increasing GPU usage and power consumption.
 
 Related proposal: https://github.com/godotengine/godot-proposals/issues/1288.
 
-## License info
+## Licensing
 
 Godot itself is distributed under the MIT license.
 See the [Godot Engine license](https://godotengine.org/license/) for more info.
@@ -25,7 +25,7 @@ See the LICENSE file for more info.
 
 The [rat photo](https://pixabay.com/photos/animal-brown-creature-critter-fur-1239127/)
 by [Robert Owen-Wahl](https://pixabay.com/users/shutterbug75-2077322/) is free for use under the
-[Pixabay Content License](https://pixabay.com/service/license-summary/)
+[Pixabay Content License](https://pixabay.com/service/license-summary/).
 
 The sound effects, demo music, and other assets are available under the
 [CC0 - public domain](https://creativecommons.org/publicdomain/zero/1.0/)
